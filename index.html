@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="css/iconfont.css">
+		<title></title>
+
+	</head>
+	<script src="js/zepto.min.js"></script>
+	<script src="js/main.js"></script>
+	<script>
+		var scale = 0;
+
+		function size(originSize, type) {
+			type = type || "width";
+
+			var height = document.documentElement.clientHeight;
+			var width = document.documentElement.clientWidth;
+			if(type == "width") {
+				scale = width / originSize * 100;
+
+			} else if(type == "height") {
+				scale = height / originSize * 100;
+
+			}
+			$("html")[0].style.fontSize = scale + "px";
+		}
+
+		$(function() {
+			size(1334, "height");
+		})
+	</script>
+
+	<body>
+		
+		<div class="main">
+			<div class="bg-img">
+				<div class="header">
+					<div>
+						<div class="id click">
+							<div></div>
+						</div>
+						<div class="propbox click none-user">
+							<div></div>
+						</div>
+						<div class="inform click none-user">
+							<div></div>
+						</div>
+					</div>
+				</div>
+				<div class="sign-box">
+					<div>
+						<div class="sign click">
+							<div></div>
+						</div>
+					</div>
+
+				</div>
+				<div class="con-container">
+					<div class="xiaomaibu click">
+						<div></div>
+					</div>
+					<div class="migong click">
+						<div></div>
+					</div>
+					<div class="baojian large click">
+						<div></div>
+					</div>
+					<div class="nvxing click">
+						<div></div>
+					</div>
+					<div class="xingwen large click">
+						<div></div>
+					</div>
+					<div class="meitu click">
+						<div></div>
+					</div>
+					<div class="youxi large click">
+						<div></div>
+					</div>
+					<div class="donation click">
+						<div></div>
+					</div>
+					<div class="tiyu large click">
+						<div></div>
+					</div>
+					<div class="yingyin click">
+						<div></div>
+					</div>
+					<div class="tushu click">
+						<div></div>
+					</div>
+					<div class="cec click">
+						<div></div>
+					</div>
+					<div class="qiu click">
+						<div></div>
+					</div>
+				</div>
+
+				<div class="tab">
+					<div class="left">
+						<div class="banbao click none-user">
+							<div></div>
+						</div>
+						<div class="guangchang click">
+							<div></div>
+						</div>
+					</div>
+					<div class="right">
+						<div class="person click none-user">
+							<div></div>
+						</div>
+					</div>
+				</div>
+				<div class="mark">
+					<div class="tip">施工中，敬请期待......</div>
+					<div class="sign-img">
+						<div class="s-header">
+							<div class="fore1"></div>
+							<div class="fore2"></div>
+							<div class="fore3">
+								<div>?</div>
+							</div>
+							<div class="fore4 click">
+								<div class="iconfont icon-wrong"></div>
+							</div>
+						</div>
+						<p class="word1">你的当前等级是 <b>10级</b> 每日获得 <strong>2</strong> 节操 </p>
+						<p class="word2">保持良好的出勤率可以快速提升等级</p>
+						<div class="s-con">
+							<ul>
+								<li class="active"><div>1</div><div><p>学分+20</p><p>节操+1</p></div><i></i></li>
+								<li class="active"><div>2</div><div><p>学分+20</p><p>节操+1</p></div><i></i></li>
+								<li class="active"><div>3</div><div><p>学分+20</p><p>节操+1</p></div><i>x2</i></li>
+								<li class="active"><div>4</div><div><p>学分+20</p><p>节操+1</p></div><i></i></li>
+								<li class=""><div>5</div><div><p>学分+20</p><p>节操+1</p></div><i></i></li>
+								<li class=""><div>6</div><div><p>学分+20</p><p>节操+1</p></div><i></i></li>
+								<li class=""><div>7</div><div><p>学分+20</p><p>节操+1</p></div><i>x3</i></li>
+							</ul>
+						</div>
+						<p class="word3">每日0点开启签到，缺勤的话就要重新开始获得教导主任的信任了！</p>
+						<div class="qiandao">签到</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/touch.min.js"></script>
+	<script src="js/mui.min.js"></script>
+
+	<script>
+		$(function(){
+			var t_flag=true;
+			touch.on(".bg-img","tap",".con-container",function (e) {
+				if(!t_flag){
+					return;
+				}
+				t_flag=false;
+				e.stopPropagation();
+
+				$(".header").toggleClass("active");
+				$(".sign-box").toggleClass("active");
+				$(".tab").toggleClass("active")
+			});
+			$(".bg-img")[0].addEventListener("webkitTransitionEnd",function (e) {
+				t_flag=true;
+			},false);
+			/*var click=document.querySelectorAll(".click");
+
+			for(var i = 0 ; i <click.length ; i++){
+				click[i].num=i;
+				click[i].addEventListener("touchstart",function (e) {
+//					e.stopPropagation();
+					click[this.num].style.filter="brightness(.6)"
+				},false);
+				click[i].addEventListener("touchend",function (e) {
+//					e.stopPropagation();
+					click[this.num].style.filter="brightness(1)"
+
+				},false);
+
+			}*/
+
+			var m_flag=true;
+
+			//手指放大
+			/*var initialScale=1;
+			var currentScale;
+			touch.on(".con-container","pinch",function (e) {
+				e.stopPropagation();
+
+				currentScale=e.scale-1;
+				currentScale+=initialScale;
+				$(this).css({"transform":"scale("+currentScale+")"});
+			});
+			touch.on(".con-container", 'pinchend', function () {
+				initialScale = currentScale;
+			});*/
+			//双击放大
+			/*touch.on(".con-container","doubletap",function (e) {
+				var bili=0.02349;
+
+				e.stopPropagation();
+				var x=e.position.x/scale;
+				var x1=x;
+				var y=e.position.y/scale;
+				var y1=y;
+				$(this).toggleClass("active");
+				if($(this).attr("class")=="con-container active"){
+//					$(this).css("background-size","100%");
+
+
+					$(this).css({"transform-origin":x+"rem "+y+"rem","transform":"scale(3)"});
+//					$(this).css({"transform":"scale(2)",width:"35.78rem",height:"26.68rem"})
+//					$(".bg-img").css({"transform":"scale(2)"});
+//					$(".bg-img").css({width:"35.78rem",height:"26.68rem"});
+//					$(this).css({"transform":"scale(2)"});
+				}else if($(this).attr("class")=="con-container"){
+//					$(this).css("background-size","200%");
+
+
+					$(this).css({"transform-origin":x1+"px "+y1+"px","transform":"scale(1)"});
+//					$(this).css({"transform":"scale(1)",width:"18.79rem",height:"13.34rem"})
+//					$(".bg-img").css({"transform":"scale(1)"});
+//					$(".bg-img").css({width:"18.79rem",height:"13.34rem"});
+//					$(this).css({"transform":"scale(1)"});
+				}
+				console.log(e.scale)
+
+			})*/
+
+			//未完成应用
+			var flag=true;
+			touch.on(".none-user","touchstart",function () {
+				if(!flag){
+					return;
+				}
+				flag=false;
+				$(".mark").css("z-index","999").find(".tip").addClass("active");
+				var t=setInterval(function () {
+
+					$(".mark .tip").removeClass("active");
+					$(".mark").css({"z-index":"1","transition":"z-index .5s ease","-webkit-transition":"z-index .5s ease"})
+					clearInterval(t);
+					flag=true;
+
+				},1000)
+			});
+
+
+			//签到
+
+
+			touch.on(".qiandao","tap",function () {
+				$(this).addClass("active").text("已签到");
+
+				if($(this).attr("class")=="qiandao active"){
+					$(".sign-box .sign > div").css("background-image","url(images/btn_map_signed_normal.png)")
+				}else{
+
+				}
+			});
+
+
+			//打开签到
+			touch.on(".sign","tap",function (e) {
+				e.preventDefault();
+				$(".sign-img").removeClass("close").addClass("active");
+				$(".mark").css({"z-index":"999","background-color":"rgba(0,0,0,.3)","-webkit-transition":"none","transition":"none"});
+			});
+			//关闭签到
+
+			touch.on(".fore4","tap",function (e){
+				e.preventDefault();
+				$(".sign-img").addClass("close").removeClass("active");
+				$(".mark").css({"background-color":"transparent","z-index":"1","transition":"background-color .5s ease,z-index .5s ease","-webkit-transition":"background-color .5s ease,z-index .5s ease"});
+			})
+
+			touch.on(".guangchang","tap",function () {
+				mui.openWindow({
+					url: 'header.html',
+					extras: {
+						name: 'mui'  //扩展参数
+					},
+					show:{
+						aniShow:"fade-in"
+					}
+				});
+			})
+			touch.on(".id","tap",function () {
+				mui.openWindow({
+					url: 'login.html',
+					extras: {
+						name: 'mui'  //扩展参数
+					},
+					show:{
+						aniShow:"fade-in"
+					}
+				});
+			})
+		})
+	</script>
+</html>

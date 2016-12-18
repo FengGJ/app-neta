@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="js/touch.min.js"></script>
+    <!--<script src="js/mui.min.js"></script>-->
+    <script src="js/zepto.min.js"></script>
+    <script src="js/main.js"></script>
+    <link href="css/mui.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/iconfont.css">
+    <title>Document</title>
+
+</head>
+<script>
+    var scale = 0;
+
+    function size(originSize, type) {
+        type = type || "width";
+
+        var height = document.documentElement.clientHeight;
+        var width = document.documentElement.clientWidth;
+        if(type == "width") {
+            scale = width / originSize * 100;
+
+        } else if(type == "height") {
+            scale = height / originSize * 100;
+
+        }
+        $("html")[0].style.fontSize = scale + "px";
+    }
+
+    $(function() {
+        size(1334, "height");
+    })
+</script>
+<body>
+    <div class="login_con">
+        <div>
+            <div class="logo">
+                <div></div>
+            </div>
+            <div class="xiaoren">
+                <div></div>
+            </div>
+            <!--<form action="index.html" id="login"></form>-->
+            <div class="user">
+                <input type="text" name="user" form="login" placeholder="手机号">
+            </div>
+            <div class="password">
+                <input type="password" name="password" form="login" placeholder="请输入密码">
+            </div>
+            <div class="sign_In">
+                <input type="submit" value="登陆" form="login">
+            </div>
+            <div class="sign_Up">
+                <a href="sign_up.html">注册</a>
+            </div>
+            <div class="disanfang">
+                <ul>
+                    <li><hr></li>
+                    <li><p>第三方登陆</p></li>
+                    <li><hr></li>
+                </ul>
+            </div>
+            <div class="wwq">
+                <ul>
+                    <li><a href="" class="iconfont icon-weibo1"></a></li>
+                    <li><a href="" class="iconfont icon-weixin3"></a></li>
+                    <li><a href="" class="iconfont icon-qq"></a></li>
+                </ul>
+            </div>
+            <div class="wjmm">
+                <a href="">忘记密码？</a>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/mui.min.js"></script>
+<script>
+    $(function(){
+        $(".user>input").focus(function () {
+            $(".login_con .xiaoren").addClass("large")
+        })
+        $(".password>input").focus(function () {
+            $(".login_con .xiaoren").removeClass("large")
+        })
+        touch.on(".sign_In","tap",function () {
+            mui.openWindow({
+                url: 'index.html',
+                extras: {
+                    name: 'mui'  //扩展参数
+                }
+            });
+        })
+    })
+</script>
+</html>

@@ -1,0 +1,78 @@
+{
+	"index.html": {
+		"resources": [
+			"js/main.js",
+			"css/main.css",
+			"js/mui.min.js",
+			"js/zepto.min.js",
+			"css/iconfont.css",
+			"css/mui.min.css",
+			"js/touch.min.js",
+			"images/btn_map_tower_normal.png",
+			"images/icon_signmain_title2.png",
+			"images/btn_map_baojian_normal.png",
+			"images/btn_map_propbox_normal.png",
+			"images/btn_map_tushu_normal.png",
+			"images/btn_map_yingyin_normal.png",
+			"images/btn_map_inform_normal.png",
+			"images/btn_map_personal_normal.png",
+			"images/btn_map_meitu_normal.png",
+			"images/btn_map_gal_len_normal.png",
+			"images/btn_qiu_normal.png",
+			"images/btn_map_donation_normal.png",
+			"fonts/iconfont.woff",
+			"images/btn_map_sign_normal.png",
+			"images/btn_map_tiyu_normal.png",
+			"images/btn_map_youxi_normal.png",
+			"images/map_school.jpg",
+			"images/btn_map_square_normal.png",
+			"images/btn_map_xiaomaibu_normal.png",
+			"images/btn_map_blackboard_normal.png",
+			"images/icon_signmain_title.png",
+			"images/btn_map_xingwen_normal.png",
+			"images/btn_map_cec_normal.png",
+			"images/btn_map_nvxing_normal.png"
+		],
+		"refer": [
+			"header.html",
+			"login.html"
+		]
+	},
+	"header.html": {
+		"resources": [
+			"fonts/mui.ttf",
+			"images/btn_class_publish_normal.png",
+			"images/btn_class_music_normal.png",
+			"js/main.js",
+			"css/main.css",
+			"js/mui.min.js",
+			"js/zepto.min.js",
+			"css/mui.min.css",
+			"js/touch.min.js"
+		],
+		"refer": [
+			"index.html"
+		]
+	},
+	"login.html": {
+		"resources": [
+			"images/ic_lp_logo.png",
+			"images/bg_login.png",
+			"images/ic_lp_peep_in.png",
+			"images/ic_lp_peep_out.png",
+			"sign_up.html",
+			"css/mui.css",
+			"js/main.js",
+			"css/main.css",
+			"js/mui.min.js",
+			"js/zepto.min.js",
+			"css/iconfont.css",
+			"js/touch.min.js",
+			"fonts/iconfont.woff"
+		],
+		"refer": [
+			"index.html",
+			"sign_up.html"
+		]
+	}
+}

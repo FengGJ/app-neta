@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-sc-ale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <script src="js/zepto.min.js"></script>
+	<script src="js/touch.min.js"></script>
+	<script src="js/main.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav">
+	    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+	    <div class="title">
+	    	<h1 class="bc">班级</h1>
+	    	<h1 class="gc">广场</h1>
+	    	<div></div>
+	    </div>
+
+	</header>
+	<nav>
+		<div class="con">
+			<div class="pubick-music click"></div>
+			<div class="pubick-word click"></div>
+		</div>
+	</nav>
+</body>
+<script src="js/mui.min.js"></script>
+<script>
+	mui.init({
+		subpages:[{
+			url:"class.html",
+			styles:{
+				top:'45px',//mui标题栏默认高度为45px；
+				bottom:'0px'//默认为0px，可不定义；
+			}
+
+		}]
+	});
+	window.addEventListener("DOMContentLoaded",function () {
+		touch.on(".title","tap",function () {
+			if($(this).text()=="广场"){
+				$(".title>div").css("transform","translateX(75%)")
+			}else{
+				$(".title>div").css("transform","translateX(0)")
+			}
+		});
+		touch.on(".bg","tap",function () {
+			mui.openWindow({
+				url: 'class.html',
+				extras: {
+					name: 'mui'  //扩展参数
+				},
+				createNew:true
+			});
+			/*mui.init({
+				subpages:[{
+					url:'class.html',
+					id:'class.html',
+					styles:{
+						top:'45px',//mui标题栏默认高度为45px；
+						bottom:'0px'//默认为0px，可不定义；
+					}
+				}]
+			});*/
+		});
+		touch.on(".gc","tap",function () {
+			mui.openWindow({
+				url: 'square.html',
+				extras: {
+					name: 'mui'  //扩展参数
+				},
+				createNew:true
+			});
+			/*mui.init({
+				subpages:[{
+					url:'square.html',
+					id:'square.html',
+					styles:{
+						top:'45px',//mui标题栏默认高度为45px；
+						bottom:'0px'//默认为0px，可不定义；
+					}
+				}]
+			});*/
+		})
+
+
+
+
+
+
+
+	})
+
+
+</script>
+</html>
