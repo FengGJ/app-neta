@@ -31,7 +31,8 @@
 			"images/icon_signmain_title.png",
 			"images/btn_map_xingwen_normal.png",
 			"images/btn_map_cec_normal.png",
-			"images/btn_map_nvxing_normal.png"
+			"images/btn_map_nvxing_normal.png",
+			"images/btn_map_signed_normal.png"
 		],
 		"refer": [
 			"header.html",
@@ -48,10 +49,13 @@
 			"js/mui.min.js",
 			"js/zepto.min.js",
 			"css/mui.min.css",
-			"js/touch.min.js"
+			"js/touch.min.js",
+			"class.html"
 		],
 		"refer": [
-			"index.html"
+			"index.html",
+			"square.html",
+			"class.html"
 		]
 	},
 	"login.html": {
@@ -73,6 +77,93 @@
 		"refer": [
 			"index.html",
 			"sign_up.html"
+		]
+	},
+	"square.html": {
+		"resources": [
+			"images/13.png",
+			"images/22.png",
+			"images/14.png",
+			"images/10.png",
+			"images/5.png",
+			"images/29.png",
+			"images/20.png",
+			"images/12.png",
+			"images/4.png",
+			"images/9.png",
+			"images/23.png",
+			"images/27.png",
+			"images/24.png",
+			"images/26.png",
+			"images/15.png",
+			"images/28.png",
+			"images/17.png",
+			"images/25.png",
+			"images/2.png",
+			"images/19.png",
+			"images/1.png",
+			"images/21.png",
+			"images/8.png",
+			"images/30.png",
+			"images/16.png",
+			"images/6.png",
+			"images/7.png",
+			"images/18.png",
+			"images/3.png",
+			"js/touch.min.js",
+			"js/main.js",
+			"css/main.css",
+			"js/zepto.min.js",
+			"images/11.png",
+			"js/mui.min.js"
+		]
+	},
+	"class.html": {
+		"resources": [
+			"images/re-3.jpg",
+			"images/bg2.jpg",
+			"images/p-img1.png",
+			"images/18.png",
+			"images/bg1.jpg",
+			"images/btn_official_jc_small_normal.png",
+			"images/btn_official_comment_normal.png",
+			"js/swiper.jquery.min.js",
+			"images/re-2.png",
+			"images/3.png",
+			"images/banner1.jpg",
+			"images/bg3.png",
+			"css/swiper.min.css",
+			"images/11.png",
+			"images/re-1.png",
+			"js/main.js",
+			"css/main.css",
+			"js/mui.min.js",
+			"js/zepto.min.js",
+			"css/mui.min.css",
+			"js/touch.min.js"
+		],
+		"refer": [
+			"show.html"
+		]
+	},
+	"show.html": {
+		"resources": [
+			"images/btn_doc_givecoins_give_normal.png",
+			"images/icon_doc_givecoins_len_give.png",
+			"js/main.js",
+			"images/re-3.jpg",
+			"css/main.css",
+			"images/p-img1.png",
+			"fonts/mui.ttf",
+			"images/re-2.png",
+			"js/mui.min.js",
+			"js/zepto.min.js",
+			"css/mui.min.css",
+			"js/touch.min.js",
+			"images/re-1.png"
+		],
+		"refer": [
+			"header.html"
 		]
 	}
 }

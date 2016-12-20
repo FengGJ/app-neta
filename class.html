@@ -340,6 +340,21 @@
     window.addEventListener("DOMContentLoaded", function () {
         var w = $(".huakuai .swiper-slide").width();
         $(".huakuai img").height(w + "px");
+        
+         var img_w = $(".news-img>div").width();
+        $(".news-img").height(img_w + "px");
+
+
+
+        //颜色
+        var arr=["#67C3E5","#50B8DE","#AEDD7B","#9AD25E","#F08395","#F06C82","#F6D27B","#EFC257"];
+
+        $(".label li").each(function(index){
+            var random=Math.floor(Math.random()*9);
+            $(this).css("background",arr[random]);
+        })
+        
+        
     }, false)
 
     touch.on(".s-slide","tap",function () {
@@ -361,5 +376,6 @@
          }]
          });*/
     });
+
 
 </script>

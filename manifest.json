@@ -225,7 +225,8 @@
 					"images/btn_map_xingwen_normal.png",
 					"images/btn_map_cec_normal.png",
 					"images/btn_map_nvxing_normal.png",
-					null
+					null,
+					"images/btn_map_signed_normal.png"
 				],
 				"refer": [
 					"header.html",
@@ -243,10 +244,12 @@
 					"js/mui.min.js",
 					"js/zepto.min.js",
 					"css/mui.min.css",
-					"js/touch.min.js"
+					"js/touch.min.js",
+					"class.html"
 				],
 				"refer": [
-					"index.html"
+					"index.html",
+					"square.html"
 				],
 				"priority": 0
 			},
@@ -270,6 +273,97 @@
 					"index.html"
 				],
 				"priority": 0
+			},
+			"square.html": {
+				"resources": [
+					"images/13.png",
+					"images/22.png",
+					"images/14.png",
+					"images/10.png",
+					"images/5.png",
+					"images/29.png",
+					"images/20.png",
+					"images/12.png",
+					"images/4.png",
+					"images/9.png",
+					"images/23.png",
+					"images/27.png",
+					"images/24.png",
+					"images/26.png",
+					"images/15.png",
+					"images/28.png",
+					"images/17.png",
+					"images/25.png",
+					"images/2.png",
+					"images/19.png",
+					"images/1.png",
+					"images/21.png",
+					"images/8.png",
+					"images/30.png",
+					"images/16.png",
+					"images/6.png",
+					"images/7.png",
+					"images/18.png",
+					"images/3.png",
+					"js/touch.min.js",
+					"js/main.js",
+					"css/main.css",
+					"js/zepto.min.js",
+					"images/11.png",
+					"js/mui.min.js"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"class.html": {
+				"resources": [
+					"images/re-3.jpg",
+					"images/bg2.jpg",
+					"images/p-img1.png",
+					"images/18.png",
+					"images/bg1.jpg",
+					"images/btn_official_jc_small_normal.png",
+					"images/btn_official_comment_normal.png",
+					"js/swiper.jquery.min.js",
+					"images/re-2.png",
+					"images/3.png",
+					"images/banner1.jpg",
+					"images/bg3.png",
+					"css/swiper.min.css",
+					"images/11.png",
+					"images/re-1.png",
+					"js/main.js",
+					"css/main.css",
+					"js/mui.min.js",
+					"js/zepto.min.js",
+					"css/mui.min.css",
+					"js/touch.min.js"
+				],
+				"refer": [
+					"show.html"
+				],
+				"priority": 0
+			},
+			"show.html": {
+				"resources": [
+					"images/btn_doc_givecoins_give_normal.png",
+					"images/icon_doc_givecoins_len_give.png",
+					"js/main.js",
+					"images/re-3.jpg",
+					"css/main.css",
+					"images/p-img1.png",
+					"fonts/mui.ttf",
+					"images/re-2.png",
+					"js/mui.min.js",
+					"js/zepto.min.js",
+					"css/mui.min.css",
+					"js/touch.min.js",
+					"images/re-1.png"
+				],
+				"refer": [
+					"header.html"
+				],
+				"priority": 0
 			}
 		},
 		"idle": {
@@ -284,12 +378,10 @@
 				"images/btn_map_propbox_pressed.png",
 				"js/mui.js",
 				"images/btn_map_meitu_pressed.png",
-				"class.html",
 				"images/map_school_yoru.jpg",
 				"images/btn_map_yingyin_pressed.png",
 				"images/btn_map_inform_pressed.png",
 				"images/btn_map_square_pressed.png",
-				"images/btn_map_signed_normal.png",
 				"images/btn_map_nvxing_pressed.png",
 				"images/btn_map_xingwen_pressed.png",
 				"images/btn_map_tushu_pressed.png",
@@ -303,7 +395,6 @@
 				"images/btn_map_sign_pressed.png",
 				"images/map_school_kill_event.jpg",
 				"images/btn_map_personal_pressed.png",
-				"js/swiper.jquery.min.js",
 				"images/btn_map_cec_pressed.png",
 				"images/btn_map_gal_len_pressed.png",
 				"images/btn_map_tiyu_pressed.png",
